@@ -1,0 +1,37 @@
+.category {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+
+}
+
+.catItem{
+    flex: 1;
+}
+
+.catImg{
+    width: 100%;
+    height: 100%;
+}
+
+.catTitle{
+    font-size : 2rem;
+    font-weight: bold;
+    color : rgb(233, 233, 233);
+    background-color : rgba(255, 255, 255, 0.451);
+    padding: 10px;
+    position: relative;
+    top: -100px;
+    border: none;
+    outline: none;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    cursor : pointer;
+    transition : all .3s ease-in-out;
+}
+
+.catTitle:hover {
+    transform : translateX(20px);
+}

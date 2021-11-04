@@ -1,0 +1,43 @@
+.newsletter { 
+    height: 60vh;
+    background-color: #fcf5f5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.title{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.description {
+    font-size: 1.4rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.formulaire{
+    border: 0.5px solid #dad8d8;
+    width: 50%;
+    height: 40px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulaire input {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 5px;
+    flex: 8;
+}
+
+.formulaire button {
+    flex: 1;
+    border: none;
+    background-color : #008080;
+    color: #fff;
+}

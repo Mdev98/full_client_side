@@ -1,0 +1,19 @@
+.arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: #6D9886;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    top: 40%;
+    z-index: 99;
+}
+
+.arrow:hover {
+    opacity: 1;
+    background-color: #6D9886;  
+}
