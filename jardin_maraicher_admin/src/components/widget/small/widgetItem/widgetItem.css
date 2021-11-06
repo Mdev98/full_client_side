@@ -1,0 +1,14 @@
+.widgetItem {
+    display : flex;
+    flex-direction : column;
+}
+
+.widgetItemName {
+    font-weight: bold;
+    font-size : 0.8rem;
+}
+
+.widgetItemStatus {
+    font-weight : lighter;
+    font-size : 0.8rem;
+}

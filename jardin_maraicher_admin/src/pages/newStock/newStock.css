@@ -1,0 +1,51 @@
+.newStock{
+    flex: 4;
+    margin: 20px;
+}
+
+.addStockForm{
+    margin-top: 10px;
+    display : flex;
+}
+
+.addStockItem{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.addStockItemImg{
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.addStockItemImg label {
+    color: #bdbdbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.addStockItem > label {
+    color: #bdbdbd;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.addStockItem > input {
+    padding: 10px;
+    border : none;
+    border-bottom: 2px solid black;
+    outline: none;
+}
+
+
+.addFormRight{
+    display : flex;
+    flex-direction: column;
+    justify-content : space-between;
+    margin-left: 50px;
+}
+

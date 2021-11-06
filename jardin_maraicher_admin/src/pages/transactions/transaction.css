@@ -1,0 +1,22 @@
+.transaction {
+    flex: 4;
+}
+
+.transactionList {
+    display: flex;
+    align-items: center;
+}
+
+.transListImage {
+    width : 32px;
+    height : 32px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+.userListMore {
+    border : none;
+    cursor : pointer;
+    background-color : rgba(255, 255, 255, 0);
+}

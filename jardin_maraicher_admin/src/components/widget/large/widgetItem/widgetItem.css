@@ -1,0 +1,12 @@
+.lwidgetItem {
+    display : flex;
+    flex-direction : column;
+}
+
+.lwidgetItemName {
+    font-weight: bold;
+}
+
+.lwidgetItemStatus {
+    font-weight : lighter;
+}

@@ -12,9 +12,38 @@
     padding: 10px 20px;
 }
 
+.seller_space {
+    display: flex;
+    align-items: center;
+}
+
+.toSeller {
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+}
+
+.toSeller::after{
+    content : '';
+    width : 100%;
+    height : 2px;
+    background-color: #77d970;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: all .3s ease-in-out;
+}
+
+.toSeller:hover::after{
+    transform: scaleX(1);
+}
 
 .NavbarLeft {
     flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 .NavbarMiddle {

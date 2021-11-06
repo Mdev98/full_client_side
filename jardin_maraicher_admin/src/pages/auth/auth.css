@@ -1,0 +1,74 @@
+.auth {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("https://media.istockphoto.com/photos/healthy-eating-background-picture-id1299325393?b=1&k=20&m=1299325393&s=170667a&w=0&h=FlHuhLHLKZXo6BaoiQlYuzBSWoboMEnIQeKPIe7KyFU=");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.auth-title {
+    text-align: center;
+    margin: 20px 0px;
+}
+
+.auth-form {
+    width: 50%;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.491);
+    display: flex;
+    flex-direction: column;
+}
+
+.input-field input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0px;
+    border: none;
+    outline:none;
+    border-bottom: 2px solid #111;
+    background-color: transparent;
+    color: #f5f5dc;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.input-field input::placeholder {
+    font-size: 1.2rem;
+    color: #111;
+}
+
+.accountType {
+    width: 100%;
+    margin: 10px 0px;
+    padding: 15px;
+    border: none;
+    outline: none;
+    color: #111;
+    font-size: 1.3rem;
+    font-weight: 600;
+    background-color: transparent;
+    border-bottom: 2px solid #111;
+}
+
+.submitBtn {
+    padding: 20px;
+    margin : 10px 0px;
+    background-color : #008080;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-size: 1.2rem;
+    
+}
+
+.more {
+    display: flex;
+    justify-content: space-between;
+    text-decoration: underline;
+    font-size: 1.2rem;
+    cursor: pointer;
+}

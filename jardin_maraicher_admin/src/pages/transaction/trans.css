@@ -1,0 +1,49 @@
+.trans { 
+    flex: 4;
+    padding: 20px;
+}
+
+.titleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.transContainer {
+    display: flex;
+    width: 40%;
+}
+
+.transShow {
+    flex: 1;
+    padding: 20px;
+    box-shadow: 0px 0px 9px 4px rgba(213, 213, 245, 0.559);
+}
+
+.transShowTop {
+    display: flex;
+    align-items: center;
+}
+
+.usrImage {
+    width : 80px;
+    height : 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.usrName {
+    font-size : 1.2rem;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.detail {
+    margin-top: 5px;
+}
+
+.infos {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin : 10px 0px;
+}

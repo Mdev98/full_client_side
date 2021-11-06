@@ -176,11 +176,14 @@ router.get(`${API}/seller/order`, authSeller, async(req,res) => {
             
             // cartDetails.profile = customer.profile
 
+            let i = 1;
+
             
             cartList.forEach(product => {
                 const { cartOwner } = product
                 if(cartOwner == req.user._id.toString()){
                     let cartDetails = {
+                        "id" : i,
                         customerId : customer._id,
                         orderId : order._id,
                         customerName : customer.username,
@@ -196,6 +199,7 @@ router.get(`${API}/seller/order`, authSeller, async(req,res) => {
                     }
 
                     commandes.push(cartDetails)
+                    i++;
                     // console.log(cartDetails)
                 }
             }); 
