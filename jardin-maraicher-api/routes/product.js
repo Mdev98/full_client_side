@@ -61,7 +61,7 @@ router.get(`${API}/products`, async(req,res) => {
     console.log(req.query)
 
     try{
-        const products = await Product.find(match).populate({path: 'owner'})
+        const products = await Product.find(match).populate({path: 'owner', select: 'username'})
         res.status(200).json(products)
     }catch(e){
         console.log(e)

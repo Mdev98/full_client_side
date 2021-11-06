@@ -50,13 +50,9 @@ const Products = ({cat, filter, sort}) => {
     },[products,cat, sort])
 
     
-    
-    console.log(sortedProducts);
-    
     return (
         <div className="product-container">
             {cat ? sortedProducts.map((product) => {
-                console.log(product)
                 return <Box id={product._id} name={product.name} category={product.category} price={product.price} key={product._id} owner={product.owner.username}/>
             }) : products.slice(0,8).map((product) => {
                 return <Box id={product._id} name={product.name} category={product.category} price={product.price} key={product._id} owner={product.owner.username}/>

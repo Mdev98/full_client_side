@@ -5,6 +5,9 @@ import ProductDetails from './productDetails/ProductDetails';
 
 import { ArrowLeft } from "@mui/icons-material"
 
+function handleClick () {
+    window.history.back();
+}
 
 
 const Product = () => {
@@ -14,7 +17,7 @@ const Product = () => {
     return (
         <div className="product">
             <Navbar />
-            <span className="return"> <ArrowLeft /> Retour</span>
+            <span className="return" onClick={handleClick}> <ArrowLeft /> Retour</span>
             <ProductDetails/>
             <Newsletter />
         </div>

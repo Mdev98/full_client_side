@@ -6,6 +6,7 @@ import Products from '../../components/products/Products';
 import Slider from '../../components/slider/Slider';
 import './home.css';
 
+
 const Home = () => {
     return (
         <div className="home">
