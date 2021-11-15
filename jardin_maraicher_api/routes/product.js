@@ -27,6 +27,8 @@ const upload = multer({
 
 
 router.post(`${API}/products`, authSeller, upload.single('image'), async (req, res) => {
+
+  // console.log(req.body)
   const buffer = await sharp(req.file.buffer).png().resize({width : 500, height : 500}).toBuffer()
 
     try {
@@ -51,17 +53,15 @@ router.post(`${API}/products`, authSeller, upload.single('image'), async (req, r
 // READ PRODUCTS
 
 router.get(`${API}/products`, async(req,res) => {
-    
+
     let match = {}
 
     if(req.query){
         match = req.query
     }
 
-    console.log(req.query)
-
     try{
-        const products = await Product.find(match).populate({path: 'owner', select: 'username'})
+        const products = await Product.find(match).populate({path: 'owner'})
         res.status(200).json(products)
     }catch(e){
         console.log(e)

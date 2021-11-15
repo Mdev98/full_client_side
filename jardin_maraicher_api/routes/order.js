@@ -199,8 +199,8 @@ router.get(`${API}/seller/order`, authSeller, async(req,res) => {
                     }
 
                     commandes.push(cartDetails)
-                    i++;
                     // console.log(cartDetails)
+                    i ++
                 }
             }); 
             

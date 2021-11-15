@@ -8,7 +8,8 @@ import {useNavigate} from 'react-router-dom';
 import axios from "axios";
 require('dotenv').config();
 
-const KEY = process.env.REACT_APP_STRIPE;
+// const KEY = process.env.REACT_APP_STRIPE;
+const KEY = "pk_test_51JsV4PIzKgTcDNJqJzZA3s2Q71bqPfNWHRl5RdUCRweJFBYL2OKfhls2hEvoWSswn3OLeCU2OL2ecySfa4cyppCG00oa0dmu7g"
 
 
 const Cart = () => {
@@ -53,9 +54,10 @@ const Cart = () => {
                 navigate('/')
             } catch (error) {
                 console.error(error)
+                navigate('/login')
             }
         }
-        makeOrder();
+        {stripeToken && makeOrder()}
     },[stripeToken])
 
     // console.log(stripeToken);
@@ -78,7 +80,7 @@ const Cart = () => {
                         description={`Montant total à payer $${cart.total}`}
                         amount={cart.total*100}
                         token={onToken}
-                        stripeKey={KEY}
+                        stripeKey="pk_test_51JsV4PIzKgTcDNJqJzZA3s2Q71bqPfNWHRl5RdUCRweJFBYL2OKfhls2hEvoWSswn3OLeCU2OL2ecySfa4cyppCG00oa0dmu7g"
                     >
                         <button className="cartTopButton btnR" >Acheter maintenant</button>
                     </StripeCheckout>

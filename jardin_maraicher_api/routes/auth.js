@@ -23,7 +23,11 @@ router.post(`${API}/signin`, async(req,res) => {
             "message" : "Utilisateur connecté"
         });
     }catch(e){
-        res.send(500).send(e)
+        // res.send(500).json({
+        //     message : e,
+        //     succes : false
+        // })
+        console.log(e);
     }
 })
 
@@ -40,7 +44,11 @@ router.post(`${API}/login`, async(req,res) => {
             "message" : "Utilisateur connecté"
         })
     }catch(e){
-        res.send(500).send(e)
+        // res.status(500).send({
+        //     message : e,
+        //     succes : false
+        // })
+        console.log(e)
     }
 })
 
